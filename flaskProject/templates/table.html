@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result table</title>
+    <link rel="stylesheet" type ="text/css" href= "/static/nude.css/">
+</head>
+<body>
+    <h1>Табличка</h1>
+    <table>
+        <thead>
+        <tr><td>number</td><td>topic</td><td>message_amount</td><td>collborators</td></tr>
+        <link rel="stylesheet" type ="text/css" href= "/static/nude.css/">
+
+        </thead>
+        <tbody>
+        {%  for a in out %}
+        <tr>
+            <td>{{ a[0] }}</td>
+            <td>{{ a[1] }}</td>
+            <td>{{ a[2] }}</td>
+            <td>{{ a[3] }}</td>
+
+
+        </tr>
+        {% endfor %}
+        <link rel="stylesheet" type ="text/css" href= "/static/nude.css/">
+
+        </tbody>
+    </table>
+    <h1>AVERage{{ av }}</h1>
+</body>
+</html>
